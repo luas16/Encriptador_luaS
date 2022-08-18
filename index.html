@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador/Desencriptador Alura</h1>
+        <img class="logo" src="img/Logo.png" alt="Alura">
+    </header>
+
+    <!-- inicia contenedor principal -->
+    <div class="contenedorPrincipal">
+        <!-- *!contenedor izquierdo -->
+        <div class="contenedorIz">
+            <!-- inicia contenedor de texto -->
+            <div class="contenedorTexto">
+                <!-- Campo de texto -->
+                <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            
+            <p><ion-icon name="alert"></ion-icon> Solo letras minúsculas y sin acentos</p>
+            <!-- inicia contenedor de botones -->
+            <div class="contenedorBotones">
+                <input type="button" class= "btnEncriptar" value="Encriptar">
+                <input type="button" class="btnDesencriptar" value="Desencriptar">
+            </div>
+        </div>
+       <!-- *! contenedor Derecho -->
+        <div class="contenedorDer">
+            <!-- Card -->
+            <div class="card">
+                <div class="imagenMuñeco" id="imagenMuñeco">
+                    <img src="img/Muñeco.png" alt="">
+                </div>
+                <div class="alertaMensaje" id="alertaMensaje">
+                    <h3>Ningun mensaje fue encontrado</h3>
+                </div>
+                <div class="alertaParrafo" id="alertaParrafo">
+                    <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+                <div class="contenedorEncriptado">
+                    <h3>Texto Encriptado</h3>
+                    <p class="textoEncriptado"> </p>
+                </div>
+                <div class="contenedorCopiar">
+                    <input type="button" value="Copiar" class="btnCopiar"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <h4>Derechos Reservados - <em>Saúl Coy</em></h4>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

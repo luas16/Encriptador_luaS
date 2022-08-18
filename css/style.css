@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 90%;
+    background-color: #F3F5FC ;
+}
+
+header{
+    width: 100%;
+    height: 4em;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+.logo{
+    margin: 1.5em 4em;
+    max-height: 60px;
+}
+
+header h1{
+    text-align: center;
+    padding-top: .5em;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    margin: auto;
+    width: 65%;
+    height: 50.6em;
+}
+.contenedorIz{
+    padding: 4em;
+    width: 60%;
+    height: 100%;
+}
+
+.contenedorTexto{
+    width: 100%;
+    height: 80%;
+    margin: 1em auto;
+}
+.texto{
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    box-shadow: 0 4px 8px 0 black;
+    border-radius: .5em;
+    resize: none;
+    padding: 0.5em;
+}
+
+.contenedorBotones{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.btnEncriptar, .btnDesencriptar, .btnCopiar{
+    width: 45%;
+    height: 3em;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+
+.btnEncriptar{
+    background-color: #0A3871 ;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+.btnDesencriptar{
+    background-color: #D8DFE8;
+    color: #000;
+    font-size: 1em;
+}
+
+.btnEncriptar:hover{
+    background: grey;
+    color: #000;
+  }
+
+.btnDesencriptar:hover{
+    background: grey;
+    color: #FFFFFF;
+}
+
+
+.contenedorDer{
+    padding: 1em 2em;
+    width: 40%;
+    height: 100%;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 black;
+    border-radius: 2em;
+    background-color: #FFFFFF; 
+  
+}
+
+.imagenMuñeco{
+    /* centramos la imagen horaizontalmente */
+    display: flex;
+    justify-content: center;
+    /* centramos la image veticalmente */
+    margin-top: 45%;
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.imagenMuñeco img{  
+    width: 21em;
+    height: 19em;
+}
+
+.alertaMensaje{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+.alertaParrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.contenedorEncriptado{
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 2em;
+}
+
+.textoEncriptado{
+    text-align: left;
+    margin: 1em;
+    font-size: 1em;
+}
+
+.contenedorCopiar{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5em;
+}
+
+.btnCopiar{
+    background-color: #D8DFE8;
+    color: #000;
+    font-size: 1em;
+}
+
+.btnCopiar:hover{
+    background: grey;
+    color: #FFFFFF;
+}
+
+footer{
+    width: 100%;
+    height: 4.5em;
+    background-color: #0A3871;
+}
+
+/* .social{
+    
+} */
+.social h4{
+    padding: 1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.ocultar{
+    display: none;
+}
+
+@media (max-width: 1400px){
+    .contenedorPrincipal{
+        width: 80%;
+        height: 45em;
+    }
+}
+
+@media (max-width: 1100px){
+    .contenedorPrincipal{
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 770px){
+    .contenedorPrincipal{
+        display: inline-block;
+        width: 100%;
+
+    }
+    .logo{
+        margin: 0;
+        margin-top: 2em;
+        max-height: 40px;
+    }
+
+    header h1{
+        padding-top: 1em;
+        font-size: 1.5em;
+    }
+
+
+    .contenedorIz{
+        margin: auto;
+        width: 100%;
+        height: 70%;
+    }
+
+    .texto{
+        font-size: 1.5em;
+    }
+    .contenedorDer{
+        padding: 0;
+        margin: auto;
+        width: 80%;
+        height: 25%;
+    }
+
+    .imagenMuñeco{
+        margin-top: 0%;
+        height: 0%;
+    }
+    .imagenMuñeco img{  
+        display: none;
+    }
+
+    .alertaMensaje{
+        height: auto;
+        font-size: 1.5em;
+        padding: 1.5em;
+    }
+
+    .alertaParrafo{
+        height: auto;
+        text-align: center;
+        padding: 0em;
+        font-size: 1em;
+        padding-bottom: 5em;
+    }
+
+    .contenedorEncriptado{
+        height: 60%;
+        padding: 0.5em;
+        font-size: 1em;
+        overflow: auto;
+    }
+    
+    .textoEncriptado{
+        margin: 0;
+    }
+    
+    .contenedorCopiar{
+        padding-top: 0;
+        height: 30%;
+    }
+    
+    .btnEncriptar, .btnDesencriptar, .btnCopiar{
+        width: 45%;
+        height: 1.5em;
+        margin-top: 1.5em;
+    }
+
+}
+
+@media (max-width: 380px ){
+    .logo{
+        margin-top: 20px;
+        max-height: 50%;
+    }
+
+    header h1{
+        padding: 1em 0;
+        font-size: 1em;
+    }
+    .contenedorTexto{
+        height: 65%;
+    }
+
+    .btnEncriptar, .btnDesencriptar, .btnCopiar{
+        width: 80%;
+    }
+
+    .contenedorIz{
+        height: 80%;
+        padding: 2em;
+    }
+    .contenedorBotones{
+        height: auto;
+    }
+
+    .texto{
+        font-size: 1.5em;
+    }
+
+    .contenedorDer{
+         height: 35%;
+    }
+
+    .contenedorEncriptado{
+        height: 70%;
+    }
+
+}
